@@ -1,12 +1,10 @@
 //! Mobile Menu //
-
 function toggleMenu() {
   document.getElementById("side_menu").classList.toggle("nav_container--nav--menu_mobile--toggle");
   document.getElementById("overlay").classList.toggle("toggle");
 }
 
 //! Contact Send Mail //
-
 function sendMail(event) {
   event.preventDefault();
   const data = new FormData(event.target);
@@ -27,20 +25,16 @@ function sendMail(event) {
     });
 }
 
-//! Nav und Footer fetch )
-
-// Fetch für die Navigation  <div id="nav"></div>
+//! Nav and Footer fetch )
 fetch("./components/nav.html")
   .then((response) => response.text())
   .then((data) => (document.getElementById("nav").innerHTML = data));
 
-// Fetch für den Footer  <div id="footer"></div>
 fetch("./components/footer.html")
   .then((response) => response.text())
   .then((data) => (document.getElementById("footer").innerHTML = data));
 
-//! Berechung Rezept //
-
+//! Calculation recipe //
 const ingredientsTable = document.getElementById("ingredientsTable");
 const original_list = ingredientsTable.innerHTML;
 let = errorMessage = "Bitte geben Sie eine gültige Portionenzahl ein (zwischen 1 und 10).";
