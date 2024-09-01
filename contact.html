@@ -6,19 +6,6 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./img/icons/fav.ico" type="image/x-icon" />
     <script src="./js/script.js" defer></script>
-    <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="c92edb92-2c37-43fb-bfb8-31f1466f595e"
-      data-blockingmode="auto"
-      type="text/javascript"
-    ></script>
-    <script
-      id="CookieDeclaration"
-      src="https://consent.cookiebot.com/c92edb92-2c37-43fb-bfb8-31f1466f595e/cd.js"
-      type="text/javascript"
-      async
-    ></script>
     <title>Kochwelt - Kontakt</title>
   </head>
   <body>
@@ -28,35 +15,14 @@
       <!-- Content hier -->
       <section class="contact_container">
         <div class="contact_container--contact">
-          <form
-            onsubmit="sendMail(event)"
-            class="contact_container--contact--form"
-          >
+          <form onsubmit="sendMail(event)" class="contact_container--contact--form">
             <legend>Kontaktiere uns</legend>
             <!-- <label for="Name">Name:</label> -->
-            <input
-              type="text"
-              id="Name"
-              name="Name"
-              placeholder="Name"
-              required
-            />
+            <input type="text" id="Name" name="Name" placeholder="Name" required />
             <!-- <label for="email">E-Mail-Adresse:</label> -->
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="E-Mail-Adresse"
-              required
-            />
+            <input type="email" id="email" name="email" placeholder="E-Mail-Adresse" required />
             <!-- <label for="message">Nachricht:</label> -->
-            <textarea
-              id="message"
-              name="message"
-              minlength="50"
-              placeholder="Nachricht"
-              required
-            ></textarea>
+            <textarea id="message" name="message" minlength="50" placeholder="Nachricht" required></textarea>
             <button type="submit">Absenden</button>
           </form>
         </div>

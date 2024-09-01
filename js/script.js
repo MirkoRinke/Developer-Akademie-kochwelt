@@ -36,7 +36,13 @@ fetch("./components/footer.html")
 
 //! Calculation recipe //
 const ingredientsTable = document.getElementById("ingredientsTable");
-const original_list = ingredientsTable.innerHTML;
+
+let original_list;
+
+if (ingredientsTable) {
+  original_list = ingredientsTable.innerHTML;
+}
+
 let = errorMessage = "Bitte geben Sie eine gültige Portionenzahl ein (zwischen 1 und 10).";
 
 if (ingredientsTable) {
