@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./img/icons/fav.ico" type="image/x-icon" />
+    <script src="./js/script.js" defer></script>
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="c92edb92-2c37-43fb-bfb8-31f1466f595e"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+    <script
+      id="CookieDeclaration"
+      src="https://consent.cookiebot.com/c92edb92-2c37-43fb-bfb8-31f1466f595e/cd.js"
+      type="text/javascript"
+      async
+    ></script>
+    <title>Kochwelt - Wurstsalat</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <div id="nav"></div>
+    <main class="content">
+      <!-- Recipe Container -->
+      <section class="recipe_container">
+        <!-- Recipe -->
+        <div class="recipe_container--recipe">
+          <div class="recipe_container--recipe--short_info">
+            <h1 class="recipe_container--recipe--short_info--heading">
+              Wurstsalat
+            </h1>
+            <img
+              class="recipe_container--recipe--short_info--img"
+              src="./img/sausage_salad.jpg"
+              alt="Ein Bild vom Fertigem essen"
+            />
+            <h6 class="recipe_container--recipe--short_info--img_source">
+              Bild von
+              <a
+                href="https://pixabay.com/de/users/ritae-19628/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1530737"
+                >RitaE</a
+              >
+              auf
+              <a
+                href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1530737"
+                >Pixabay</a
+              >
+            </h6>
+            <div class="recipe_container--recipe--short_info--details">
+              <span class="recipe_container--recipe--short_info--details--box"
+                ><img
+                  class="recipe_container--recipe--short_info--details--box--img"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Clock Logo"
+                />20 Min</span
+              >
+              <span class="recipe_container--recipe--short_info--details--box"
+                ><img
+                  class="recipe_container--recipe--short_info--details--box--img"
+                  src="./img/icons/brain-solid.svg"
+                  alt="Brain Logo"
+                />simple</span
+              >
+              <span class="recipe_container--recipe--short_info--details--box"
+                ><img
+                  class="recipe_container--recipe--short_info--details--box--img"
+                  src="./img/icons/calendar-alt-regular.svg"
+                  alt="Calendar Logo"
+                />10.08.2024</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Ingredients Input -->
+        <div class="recipe_container--ingredients">
+          <form class="recipe_container--ingredients--input">
+            <label for="portions">Zutaten für</label>
+            <input
+              type="number"
+              id="portions"
+              name="portions"
+              min="1"
+              max="10"
+              value="1"
+              required
+            />
+            <button onclick="CalculatePortions(event)" type="submit">
+              Portionen
+            </button>
+            <span
+              id="error-message"
+              class="recipe_container--ingredients--input--error"
+            ></span>
+          </form>
+        </div>
+        <!-- Ingredients List -->
+        <table class="recipe_container--ingredients_list" id="ingredientsTable">
+          <tr>
+            <td>200g Fleischwurst</td>
+          </tr>
+          <tr>
+            <td>100g Emmentaler</td>
+          </tr>
+          <tr>
+            <td>50g Gewürzgurken</td>
+          </tr>
+          <tr>
+            <td>1 Zwiebel</td>
+          </tr>
+          <tr>
+            <td>1EL Senf (nach Geschmack, z.B. mittelscharf)</td>
+          </tr>
+          <tr>
+            <td>1EL Essig</td>
+          </tr>
+          <tr>
+            <td>1EL Öl (z.B. Sonnenblumenöl)</td>
+          </tr>
+          <tr>
+            <td>Frische Kräuter wie Schnittlauch oder Petersilie</td>
+          </tr>
+        </table>
+        <!-- Preparation -->
+        <div class="recipe_container--preparation">
+          <div class="recipe_container--preparation--short_info">
+            <h2 class="recipe_container--preparation--short_info--heading">
+              Zubereitung
+            </h2>
+            <div class="recipe_container--preparation--short_info--details">
+              <span
+                class="recipe_container--preparation--short_info--details--box"
+                ><img
+                  class="recipe_container--preparation--short_info--details--box--img"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Clock Logo"
+                />ca 20 Minuten</span
+              >
+              <span
+                class="recipe_container--preparation--short_info--details--box"
+                ><img
+                  class="recipe_container--preparation--short_info--details--box--img"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Clock Logo"
+                />Gesamtzeit ca 50 Minuten</span
+              >
+            </div>
+          </div>
+          <p class="recipe_container--preparation--textarea">
+            Zuerst schneidest du die Wurst in feine Streifen oder kleine Würfel
+            und machst dasselbe mit dem Käse. Die Zwiebel schälst du und hackst
+            sie fein, während du die Gewürzgurken in kleine Würfel schneidest.
+            <br /><br />
+            In einer kleinen Schüssel bereitest du das Dressing vor, indem du
+            Senf, Essig und Öl gut miteinander vermengst. Füge Salz und Pfeffer
+            nach Geschmack hinzu und, falls gewünscht, auch einen Teelöffel
+            Zucker, um das Dressing abzurunden.
+            <br /><br />
+            Gib die Wurststreifen, die Käsewürfel, die Zwiebelstücke und die
+            Gurken in eine große Schüssel. Übergieße alles mit dem vorbereiteten
+            Dressing und mische die Zutaten gut durch, damit sich das Dressing
+            gleichmäßig verteilt.
+            <br /><br />
+            Lass den Wurstsalat mindestens 30 Minuten im Kühlschrank
+            durchziehen, damit die Aromen sich gut entfalten können. Vor dem
+            Servieren kannst du den Salat nach Belieben mit frischen Kräutern
+            wie Schnittlauch oder Petersilie garnieren.
+            <br /><br />
+            Viel Spaß beim Zubereiten und guten Appetit!
+          </p>
+        </div>
+      </section>
+      <!-- Writer Container -->
+      <section class="writer_container">
+        <div class="writer_container--writer">
+          <h3 class="writer_container--writer--heading">Rezept erstellt von</h3>
+          <div class="writer_container--writer--person">
+            <div class="writer_container--writer--person--img_container">
+              <img
+                class="writer_container--writer--person--img_container--img"
+                src="./img/profile_ai.png"
+                alt="Bild Autor"
+              />
+            </div>
+            <span class="writer_container--writer--person--name"> Mirko </span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Container -->
+    <div id="footer"></div>
+  </body>
+</html>

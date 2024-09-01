@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./img/icons/fav.ico" type="image/x-icon" />
+    <script src="./js/script.js" defer></script>
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="c92edb92-2c37-43fb-bfb8-31f1466f595e"
+      data-blockingmode="auto"
+      type="text/javascript"></script>
+    <script
+      id="CookieDeclaration"
+      src="https://consent.cookiebot.com/c92edb92-2c37-43fb-bfb8-31f1466f595e/cd.js"
+      type="text/javascript"
+      async></script>
+    <title>Kochwelt - Ente mit süß-saurer Sauce</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <div id="nav"></div>
+    <main class="content">
+      <!-- Recipe Container -->
+      <section class="recipe_container">
+        <!-- Recipe -->
+        <div class="recipe_container--recipe">
+          <div class="recipe_container--recipe--short_info">
+            <h1 class="recipe_container--recipe--short_info--heading">Ente mit süß-saurer Sauce</h1>
+            <img class="recipe_container--recipe--short_info--img" src="./img/duck_with_sweet_and_sour_sauce.jpg" alt="Ein Bild vom Fertigem essen" />
+            <h6 class="recipe_container--recipe--short_info--img_source">
+              Bild von
+              <a
+                href="https://pixabay.com/de/users/anilsharma26-13475484/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7279389"
+                >Anil sharma</a
+              >
+              auf
+              <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7279389">Pixabay</a>
+            </h6>
+            <div class="recipe_container--recipe--short_info--details">
+              <span class="recipe_container--recipe--short_info--details--box"
+                ><img class="recipe_container--recipe--short_info--details--box--img" src="./img/icons/clock-regular.svg" alt="Clock Logo" />40
+                Min</span
+              >
+              <span class="recipe_container--recipe--short_info--details--box"
+                ><img
+                  class="recipe_container--recipe--short_info--details--box--img"
+                  src="./img/icons/brain-solid.svg"
+                  alt="Brain Logo" />normal</span
+              >
+              <span class="recipe_container--recipe--short_info--details--box"
+                ><img
+                  class="recipe_container--recipe--short_info--details--box--img"
+                  src="./img/icons/calendar-alt-regular.svg"
+                  alt="Calendar Logo" />10.08.2024</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Ingredients Input -->
+        <div class="recipe_container--ingredients">
+          <form class="recipe_container--ingredients--input">
+            <label for="portions">Zutaten für</label>
+            <input type="number" id="portions" name="portions" min="1" max="10" value="1" required />
+            <button onclick="CalculatePortions(event)" type="submit">Portionen</button>
+            <span id="error-message" class="recipe_container--ingredients--input--error"></span>
+          </form>
+        </div>
+        <!-- Ingredients List -->
+        <table class="recipe_container--ingredients_list" id="ingredientsTable">
+          <tr>
+            <td>1 Entenbrustfilet(s), frische</td>
+          </tr>
+          <tr>
+            <td>1 Karotte(n)</td>
+          </tr>
+          <tr>
+            <td>1 Paprikaschote(n)</td>
+          </tr>
+          <tr>
+            <td>2 Blumenkohlröschen</td>
+          </tr>
+          <tr>
+            <td>2 Brokkoliröschen</td>
+          </tr>
+          <tr>
+            <td>1 Zucchini</td>
+          </tr>
+          <tr>
+            <td>1 Frühlingszwiebel(n)</td>
+          </tr>
+          <tr>
+            <td>1 Handvoll Bohnen</td>
+          </tr>
+          <tr>
+            <td>Salz und Pfeffer</td>
+          </tr>
+          <th>Für die Sauce</th>
+          <tr>
+            <td>90ml Weißweinessig</td>
+          </tr>
+
+          <tr>
+            <td>4EL Zucker</td>
+          </tr>
+          <tr>
+            <td>1TL Salz</td>
+          </tr>
+          <tr>
+            <td>2EL Tomatenmark</td>
+          </tr>
+          <tr>
+            <td>1EL Sojasauce, dunkle</td>
+          </tr>
+          <tr>
+            <td>2EL Sonnenblumenöl</td>
+          </tr>
+          <tr>
+            <td>2EL Speisestärke, in etwas Wasser aufgelöst</td>
+          </tr>
+          <tr>
+            <td>100ml Ananassaft</td>
+          </tr>
+          <tr>
+            <td>25ml Wasser</td>
+          </tr>
+        </table>
+        <!-- Preparation -->
+        <div class="recipe_container--preparation">
+          <div class="recipe_container--preparation--short_info">
+            <h2 class="recipe_container--preparation--short_info--heading">Zubereitung</h2>
+            <div class="recipe_container--preparation--short_info--details">
+              <span class="recipe_container--preparation--short_info--details--box"
+                ><img class="recipe_container--preparation--short_info--details--box--img" src="./img/icons/clock-regular.svg" alt="Clock Logo" />ca
+                40 Minuten</span
+              >
+              <span class="recipe_container--preparation--short_info--details--box"
+                ><img
+                  class="recipe_container--preparation--short_info--details--box--img"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Clock Logo" />Gesamtzeit ca 1Std. 25Minuten</span
+              >
+            </div>
+          </div>
+          <p class="recipe_container--preparation--textarea">
+            Die Fettschicht der Entenbrüste mit einem scharfen Messer leicht einschneiden und mit Salz sowie Pfeffer würzen. Die Entenbrüste in eine
+            Backform legen und bei 180 °C etwa 30 bis 45 Minuten garen. Währenddessen das Gemüse gründlich waschen, schälen und klein schneiden.
+            <br /><br />
+            In einer großen Pfanne Essig, Zucker, Salz, Tomatenmark, Sojasauce und Öl zum Kochen bringen. Die aufgelöste Speisestärke einrühren und
+            mit Ananassaft ablöschen. Falls die Sauce süßer sein soll, etwas Wasser hinzufügen. Das Gemüse in die Sauce geben und zusammen garen
+            lassen.
+            <br /><br />
+            Wenn die Ente knusprig ist, in dünne Scheiben schneiden. Sollte sie noch nicht ganz durchgegart sein, für weitere 10 Minuten in den Ofen
+            zurückstellen.
+            <br /><br />
+            Die Ente zusammen mit Reis und der Sauce anrichten.
+          </p>
+        </div>
+      </section>
+      <!-- Writer Container -->
+      <section class="writer_container">
+        <div class="writer_container--writer">
+          <h3 class="writer_container--writer--heading">Rezept erstellt von</h3>
+          <div class="writer_container--writer--person">
+            <div class="writer_container--writer--person--img_container">
+              <img class="writer_container--writer--person--img_container--img" src="./img/profile_ai.png" alt="Bild Autor" />
+            </div>
+            <span class="writer_container--writer--person--name"> Mirko </span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Container -->
+    <div id="footer"></div>
+  </body>
+</html>

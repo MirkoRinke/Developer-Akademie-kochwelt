@@ -1,0 +1,32 @@
+/* @media breakpoints */
+
+/** 1500pxoder schmaler */
+$breakpoint-lg: 1500px !default;
+
+/** 900px oder schmaler */
+$breakpoint-md: 900px !default;
+
+/** 500px oder schmaler */
+$breakpoint-sm: 500px !default;
+
+/** 350px oder schmaler */
+$breakpoint-xs: 350px !default;
+
+/** 300px oder schmaler */
+$breakpoint-xxs: 300px !default;
+
+/** 1500pxoder schmaler */
+@media (max-width: $breakpoint-lg) {
+}
+/** 900px oder schmaler */
+@media (max-width: $breakpoint-md) {
+}
+/** 500px oder schmaler */
+@media (max-width: $breakpoint-sm) {
+}
+/** 350px oder schmaler */
+@media (max-width: $breakpoint-xs) {
+}
+/** 300px oder schmaler */
+@media (max-width: $breakpoint-xxs) {
+}

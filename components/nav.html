@@ -1,0 +1,52 @@
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+<header class="nav_container">
+  <nav class="nav_container--nav">
+    <div class="nav_container--nav--logo">
+      <a class="nav_container--nav--logo--large" href="./index.html"
+        ><img src="./img/logo.png" alt=""
+      /></a>
+      <a class="nav_container--nav--logo--small" href="./index.html"
+        ><img src="./img/logo_small.png" alt=""
+      /></a>
+    </div>
+    <div class="nav_container--nav--menu_desktop">
+      <a class="nav_container--nav--menu_desktop--links" href="./index.html"
+        >Start</a
+      >
+      <a
+        class="nav_container--nav--menu_desktop--links"
+        href="./daily_recipe.html"
+        >Rezept des Tages</a
+      >
+      <a class="nav_container--nav--menu_desktop--links" href="./contact.html"
+        >Kontakt</a
+      >
+      <a class="nav_container--nav--menu_desktop--links" href="./Imprint.html"
+        >Impressum</a
+      >
+    </div>
+    <div class="nav_container--nav--menu_mobile">
+      <button
+        onclick="toggleMenu()"
+        class="nav_container--nav--menu_mobile--button"
+      >
+        <img src="./img/icons/menu.svg" alt="Menu Button" />
+      </button>
+      <div
+        class="nav_container--nav--menu_mobile--links nav_container--nav--menu_mobile--toggle"
+        id="side_menu"
+      >
+        <button
+          onclick="toggleMenu()"
+          class="nav_container--nav--menu_mobile--button_menu"
+        >
+          <img src="./img/icons/close.svg" alt="Menu Button" />
+        </button>
+        <a href="./index.html">Start</a>
+        <a href="./daily_recipe.html">Rezept des Tages</a>
+        <a href="./contact.html">Kontakt</a>
+        <a href="./Imprint.html">Impressum</a>
+      </div>
+    </div>
+  </nav>
+</header>

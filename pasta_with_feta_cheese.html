@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./img/icons/fav.ico" type="image/x-icon" />
+    <script src="./js/script.js" defer></script>
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="c92edb92-2c37-43fb-bfb8-31f1466f595e"
+      data-blockingmode="auto"
+      type="text/javascript"></script>
+    <script
+      id="CookieDeclaration"
+      src="https://consent.cookiebot.com/c92edb92-2c37-43fb-bfb8-31f1466f595e/cd.js"
+      type="text/javascript"
+      async></script>
+    <title>Kochwelt - Nudeln mit Hirtenkäse</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <div id="nav"></div>
+    <main class="content">
+      <!-- Recipe Container -->
+      <section class="recipe_container">
+        <!-- Recipe -->
+        <div class="recipe_container--recipe">
+          <div class="recipe_container--recipe--short_info">
+            <h1 class="recipe_container--recipe--short_info--heading">Nudeln mit Hirtenkäse</h1>
+            <img
+              class="recipe_container--recipe--short_info--img"
+              src="./img/pasta_with_feta_cheese.jpg"
+              alt="Ein Bild vom Fertigem essen" />
+            <h6 class="recipe_container--recipe--short_info--img_source">
+              Bild von
+              <a
+                href="https://pixabay.com/de/users/susan-lu4esm-7009216/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8269635"
+                >Susan Cipriano</a
+              >
+              auf
+              <a
+                href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8269635"
+                >Pixabay</a
+              >
+            </h6>
+            <div class="recipe_container--recipe--short_info--details">
+              <span class="recipe_container--recipe--short_info--details--box"
+                ><img
+                  class="recipe_container--recipe--short_info--details--box--img"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Clock Logo" />15 Min</span
+              >
+              <span class="recipe_container--recipe--short_info--details--box"
+                ><img
+                  class="recipe_container--recipe--short_info--details--box--img"
+                  src="./img/icons/brain-solid.svg"
+                  alt="Brain Logo" />simple</span
+              >
+              <span class="recipe_container--recipe--short_info--details--box"
+                ><img
+                  class="recipe_container--recipe--short_info--details--box--img"
+                  src="./img/icons/calendar-alt-regular.svg"
+                  alt="Calendar Logo" />10.08.2024</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Ingredients Input -->
+        <div class="recipe_container--ingredients">
+          <form class="recipe_container--ingredients--input">
+            <label for="portions">Zutaten für</label>
+            <input type="number" id="portions" name="portions" min="1" max="10" value="1" required />
+            <button onclick="CalculatePortions(event)" type="submit">Portionen</button>
+            <span id="error-message" class="recipe_container--ingredients--input--error"></span>
+          </form>
+        </div>
+        <!-- Ingredients List -->
+        <table class="recipe_container--ingredients_list" id="ingredientsTable">
+          <tr>
+            <td><span class="quantity">125</span>g Hirtenkäse</td>
+          </tr>
+          <tr>
+            <td><span class="quantity">125</span>g Cherry Tomaten</td>
+          </tr>
+          <tr>
+            <td><span class="quantity">125</span>g Nudeln</td>
+          </tr>
+          <tr>
+            <td><span class="quantity">2</span> Zehen Knoblauch</td>
+          </tr>
+          <tr>
+            <td><span class="quantity">1</span> Zwiebel oder <span class="quantity">2</span> Schalotten</td>
+          </tr>
+          <tr>
+            <td>Basilikum</td>
+          </tr>
+          <tr>
+            <td>Olivenöl</td>
+          </tr>
+          <tr>
+            <td>Salz und Pfeffer</td>
+          </tr>
+        </table>
+        <!-- Preparation -->
+        <div class="recipe_container--preparation">
+          <div class="recipe_container--preparation--short_info">
+            <h2 class="recipe_container--preparation--short_info--heading">Zubereitung</h2>
+            <div class="recipe_container--preparation--short_info--details">
+              <span class="recipe_container--preparation--short_info--details--box"
+                ><img
+                  class="recipe_container--preparation--short_info--details--box--img"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Clock Logo" />ca 15 Minuten</span
+              >
+              <span class="recipe_container--preparation--short_info--details--box"
+                ><img
+                  class="recipe_container--preparation--short_info--details--box--img"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Clock Logo" />Gesamtzeit ca 45 Minuten</span
+              >
+            </div>
+          </div>
+          <p class="recipe_container--preparation--textarea">
+            Heize deinen Ofen auf 175°C Umluft vor und bereite eine Auflaufform vor. Schneide die Tomaten, Schalotten
+            und Knoblauchzehen klein. Platziere den Hirtenkäse in der Mitte der Auflaufform. Verteile die geschnittenen
+            Tomaten, Schalotten und Knoblauchzehen rund um den Käse und beträufle alles großzügig mit Olivenöl. Würze
+            nach Geschmack.
+            <br /><br />
+            Schiebe die Auflaufform in den Ofen und lasse das Ganze 25 Minuten garen. In der Zwischenzeit koche die
+            Nudeln gemäß der Packungsanweisung. Wenn die 25 Minuten um sind, nimm die Auflaufform aus dem Ofen und
+            vermische alles gut mit einer Gabel. Zerdrücke den Hirtenkäse ein wenig und schmecke das Gericht ab, um
+            sicherzustellen, dass es gut gewürzt ist.
+            <br /><br />
+            Mische nun die gekochten Nudeln unter die Käsesauce und die übrigen Zutaten. Serviere das Gericht heiß.
+          </p>
+        </div>
+      </section>
+      <!-- Writer Container -->
+      <section class="writer_container">
+        <div class="writer_container--writer">
+          <h3 class="writer_container--writer--heading">Rezept erstellt von</h3>
+          <div class="writer_container--writer--person">
+            <div class="writer_container--writer--person--img_container">
+              <img
+                class="writer_container--writer--person--img_container--img"
+                src="./img/profile_ai.png"
+                alt="Bild Autor" />
+            </div>
+            <span class="writer_container--writer--person--name"> Mirko </span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Container -->
+    <div id="footer"></div>
+  </body>
+</html>
