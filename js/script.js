@@ -43,7 +43,7 @@ if (ingredientsTable) {
   original_list = ingredientsTable.innerHTML;
 }
 
-let = errorMessage = "Bitte geben Sie eine gültige Portionenzahl ein (zwischen 1 und 10).";
+let = errorMessage = "Bitte geben Sie eine gültige Portionsgröße ein (zwischen 1 und 10).";
 
 if (ingredientsTable) {
   function CalculatePortions(event) {

@@ -33,7 +33,7 @@ $footer-height: 120px !default;
 
 /* @media breakpoints */
 
-/** 1500pxoder schmaler */
+/** 1500px oder schmaler */
 $breakpoint-lg: 1500px !default;
 
 /** 900px oder schmaler */
@@ -48,7 +48,7 @@ $breakpoint-xs: 350px !default;
 /** 300px oder schmaler */
 $breakpoint-xxs: 300px !default;
 
-/** 1500pxoder schmaler */
+/** 1500px oder schmaler */
 // @media (max-width: $breakpoint-lg) {
 // }
 /** 900px oder schmaler */
@@ -252,7 +252,7 @@ $breakpoint-xxs: 300px !default;
         }
       }
       &--toggle {
-        transform: translatey(-200%);
+        transform: translateY(-200%);
       }
     }
   }
