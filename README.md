@@ -7,11 +7,6 @@
 
 Welcome to my fourth project as part of the Developer Academy! In this project, I created a website for Kochwelt, which takes you on a journey through the world of culinary delights with simple and creative recipes for every occasion. Discover delicious ideas that bring your kitchen to life!
 
-## 🔗 Links
-
-- [Live Site URL](https://warm-bublanina-88c6f4.netlify.app/)
-
-
 ## 🛠️ Built with
 
 - HTML
@@ -32,4 +27,5 @@ Welcome to my fourth project as part of the Developer Academy! In this project, 
 
 ## ✍️ Author
 
-- Website - [My Github](https://github.com/MirkoRinke)
+ - [Webiste](https://mirkorinke.dev)
+ - [Github](https://github.com/MirkoRinke)
